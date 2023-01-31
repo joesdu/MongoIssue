@@ -1,4 +1,6 @@
 ﻿using MongoDB.Driver;
+using MongoDB.Driver.Linq;
+
 // ReSharper disable MemberCanBePrivate.Global
 // ReSharper disable ClassNeverInstantiated.Global
 
@@ -7,7 +9,7 @@ namespace MongoIssue;
 /// <summary>
 /// 创建一个基础的DBContext来管理一些MongoDB的设置和创建基本的对象.
 /// </summary>
-public class BaseDbContext 
+public class BaseDbContext
 {
     /// <summary>
     /// MongoClient
@@ -30,6 +32,7 @@ public class BaseDbContext
         var t = Activator.CreateInstance<T>();
         var mongoUrl = new MongoUrl(connStr);
         var clientSettings = MongoClientSettings.FromUrl(mongoUrl);
+        clientSettings.LinqProvider = LinqProvider.V2;
         t.Client = new MongoClient(clientSettings);
         var dbName = !string.IsNullOrWhiteSpace(mongoUrl.DatabaseName) ? mongoUrl.DatabaseName : db;
         t.Database = t.Client.GetDatabase(dbName);
