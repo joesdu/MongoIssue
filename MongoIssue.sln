@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33318.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoIssue", "MongoIssue\MongoIssue.csproj", "{4435DC21-832F-44D2-A105-F80F5E9A84F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoIssue", "MongoIssue\MongoIssue.csproj", "{4435DC21-832F-44D2-A105-F80F5E9A84F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasilyNET.Mongo", "EasilyNET.Mongo\EasilyNET.Mongo.csproj", "{C4B23086-1107-4932-A955-982E02AEA08C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasilyNET.Mongo.Extension", "EasilyNET.Mongo.Extension\EasilyNET.Mongo.Extension.csproj", "{066DD0F0-C3A5-4376-914C-3DA95E91D33A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasilyNET.Mongo.ConsoleDebug", "EasilyNET.Mongo.ConsoleDebug\EasilyNET.Mongo.ConsoleDebug.csproj", "{E99EF4D6-5B81-43A6-B824-D8855AB9D86F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{4435DC21-832F-44D2-A105-F80F5E9A84F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4435DC21-832F-44D2-A105-F80F5E9A84F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4435DC21-832F-44D2-A105-F80F5E9A84F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4B23086-1107-4932-A955-982E02AEA08C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B23086-1107-4932-A955-982E02AEA08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B23086-1107-4932-A955-982E02AEA08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B23086-1107-4932-A955-982E02AEA08C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066DD0F0-C3A5-4376-914C-3DA95E91D33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066DD0F0-C3A5-4376-914C-3DA95E91D33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066DD0F0-C3A5-4376-914C-3DA95E91D33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066DD0F0-C3A5-4376-914C-3DA95E91D33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E99EF4D6-5B81-43A6-B824-D8855AB9D86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E99EF4D6-5B81-43A6-B824-D8855AB9D86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E99EF4D6-5B81-43A6-B824-D8855AB9D86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E99EF4D6-5B81-43A6-B824-D8855AB9D86F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

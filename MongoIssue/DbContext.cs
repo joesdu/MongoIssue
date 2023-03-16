@@ -1,10 +1,11 @@
-﻿using MongoDB.Driver;
-using MongoIssue.Models;
+﻿using EasilyNET.Mongo;
+using MongoDB.Driver;
+
 // ReSharper disable ClassNeverInstantiated.Global
 
 namespace MongoIssue;
 
-public sealed class DbContext : BaseDbContext
+public sealed class DbContext : EasilyNETMongoContext
 {
-    public IMongoCollection<TestValues> TestValues => Database.GetCollection<TestValues>("values");
+    public IMongoCollection<dynamic> TestValues => Database.GetCollection<dynamic>("values");
 }
